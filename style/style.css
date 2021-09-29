@@ -63,6 +63,9 @@ h1, h2 {
   left: 10px;
   transition: 0.25s;
 }
+.bi-list {
+  color: orangered;
+}
 
 
 

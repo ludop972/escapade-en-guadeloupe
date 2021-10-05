@@ -22,7 +22,7 @@ ul.navbar-nav > li > a:hover {
   box-shadow: 5px 5px 5px 5px grey;
   border-radius: 5px;
 }
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   color: white;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -67,6 +67,12 @@ h1, h2 {
   color: orangered;
 }
 
-
+.others1 {
+  list-style: none;
+  font-size: 20px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=style.css.map */

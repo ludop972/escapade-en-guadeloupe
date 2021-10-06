@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="16x16" href="pictures/logoheader.png">
+  <!--boostrap 5.6 CDN-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!--CSS-->
   <link rel="stylesheet" href="style/style.css" type="text/css">
   <title>Escapade en Guadeloupe</title>
   <meta name="description" content="Envie d'une Escapade dans l'Archipel de la Guadeloupe, vous ne 
   savez pas par où commencer, on s'occupe de tous venez consulter notre site, vous y trouverez sûrement ce dont vous avez besoin..." />
-  
 </head>
 
 
@@ -25,31 +26,43 @@
       
    <!--Menu de navigation-->
    <div class="col-12">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
       <a href="index.html" class="navbar-brand"><img class="logo" src="pictures/logoheader.png" alt="logo"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navigation"
-          aria-expanded="false"
-          aria-controls="navbarNavDropdown"
-          aria-label="Toggle navigation"> 
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
+
+        <button 
+            class="navbar-toggler burger" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarTogglerDemo01" 
+            aria-controls="navbarTogglerDemo01" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
         </button>
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav">
-          <li class="nav-item active pl-3 pr-3"><a class="nav-link" href="index.html">Accueil</a></li>
-          <li class="nav-item active pl-3 pr-3"><a class="nav-link" href="us.html">A propros de nous</a></li>
-          <li class="nav-item active pl-3 pr-3"><a class="nav-link" href="suggets.html">Nos suggestions</a></li>
-          <li class="nav-item active pl-3 pr-3"><a class="nav-link" href="Event.html">Evènements</a></li>       
-          <li class="nav-item active pl-3 pr-3"><a class="nav-link" href="contact.html">Contactez-nous</a></li>         
-        </ul>
-     </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">   
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="us.html">A propos de nous </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="suggets.html">Nos suggestions</a>
+            </li>
+            <li class="nav-item active pl-3 pr-3">
+              <a class="nav-link" href="Event.html">Evénements</a></li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    </div>
+  </div>
     </header>
         
   <main>
@@ -61,7 +74,7 @@
          est composée de deux îles : la Grande-Terre à l'est et la Basse-Terre à l'ouest,
          séparées par un bras de mer, appelé « la Rivière Salée ».</p>
         <p class="p-2">Tout d'abord je vous invite à consulter notre site en musique, faites vous plaisir.</p>
-        <audio controls>
+        <audio controls autoplay>
         <source src="sound.mp3" type="audio/mp3">Ce type de média n'est pas supporté par votre navigateur</audio>
       </div>
         
@@ -113,19 +126,7 @@
           </section>
         </article>
   </main>
-  <div class="p-4 others">
-    <h3>Liens utiles (en attente de résolution problème de navigation) :</h3>
-      <ul class="others1">
-        <li>
-          <a href="us.html">A propos de nous</a>
-        </li>
-        <li>
-          <a href="contact.html">Nous contacter</a>
-        </li>
-      </ul>
-    </h3>
   </div>
-    </div>
 
     <!--FOOTER-->
       <footer class="text-center text-white mt-5" style="background-color: #45637d;">
